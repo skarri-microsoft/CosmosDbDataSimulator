@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationDataModels", "SimulationDataModels\SimulationDataModels.csproj", "{258C4C4B-50F6-42BE-984D-9D305D5F2A21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{3B94EE47-C7EE-47AF-B9A6-81276F8B697A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfServiceBusQueueTrigger", "AfServiceBusQueueTrigger\AfServiceBusQueueTrigger.csproj", "{AECB166A-FA3D-49C7-9749-09E833CC86BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{258C4C4B-50F6-42BE-984D-9D305D5F2A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{258C4C4B-50F6-42BE-984D-9D305D5F2A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{258C4C4B-50F6-42BE-984D-9D305D5F2A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B94EE47-C7EE-47AF-B9A6-81276F8B697A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B94EE47-C7EE-47AF-B9A6-81276F8B697A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B94EE47-C7EE-47AF-B9A6-81276F8B697A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B94EE47-C7EE-47AF-B9A6-81276F8B697A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECB166A-FA3D-49C7-9749-09E833CC86BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECB166A-FA3D-49C7-9749-09E833CC86BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECB166A-FA3D-49C7-9749-09E833CC86BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECB166A-FA3D-49C7-9749-09E833CC86BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

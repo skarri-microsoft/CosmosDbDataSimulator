@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Threading;
     using System.Threading.Tasks;
     using Microsoft.Azure.Documents;
     using Microsoft.Azure.Documents.ChangeFeedProcessor;
@@ -139,7 +140,7 @@
             Uri collectionUri = UriFactory.CreateDocumentCollectionUri(this.DatabaseName, this.CollectionName);
             if (!isUpsert)
             {
-                await this.DocumentClient.CreateDocumentAsync(collectionUri, doc);
+                await this.DocumentClient.CreateDocumentAsync(collectionUri, doc,null,true,new CancellationToken(false));
                 return;
             }
             await this.DocumentClient.UpsertDocumentAsync(collectionUri, doc);

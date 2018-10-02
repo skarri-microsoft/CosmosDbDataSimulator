@@ -192,6 +192,24 @@
         }
     }
 
+    public class ServiceBusConfig
+    {
+        public string ConnectionString { get; set; }
+
+        public string QueueName { get;set; }
+
+        public static ServiceBusConfig GetServiceBusConfig()
+        {
+            ServiceBusConfig serviceBusConfig = new ServiceBusConfig()
+            {
+                ConnectionString = ConfigurationManager.AppSettings["serviceBusConnStr"],
+                QueueName = ConfigurationManager.AppSettings["queueName"]
+            };
+           
+            return serviceBusConfig;
+        }
+    }
+
     public class ChangeFeedConfig
     {
         public int MaxItemCount { get; set; }
